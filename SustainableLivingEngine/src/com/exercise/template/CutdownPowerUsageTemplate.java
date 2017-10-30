@@ -7,11 +7,13 @@ package com.exercise.template;
  *
  */
 public class CutdownPowerUsageTemplate extends PowerTemplate {
-
+	
+	String id;
 	String templateType;
 
 	public CutdownPowerUsageTemplate() {
 		templateType = "CutdownPowerUsageTemplate";
+		id = "";
 	}
 
 	@Override
@@ -23,6 +25,11 @@ public class CutdownPowerUsageTemplate extends PowerTemplate {
 	public void customiseTemplate() {
 		// customize the template
 		
+	}
+
+	@Override
+	public String getTemplateId() {
+		return id;
 	}
 	
 	// TODO implementing the template for cut down usage

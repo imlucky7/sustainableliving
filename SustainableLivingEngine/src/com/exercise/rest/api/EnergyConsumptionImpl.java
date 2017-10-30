@@ -8,7 +8,7 @@ import com.exercise.rest.api.vo.ConsumptionVO;
 public class EnergyConsumptionImpl implements IEnergyConsumption {
 
 	@Override
-	public Response storeRecord(String userId, ConsumptionVO vo) {
+	public Response storeRecord(String userId, ConsumptionVO vo) throws Exception {
 		ConsumptionRecord record = new ConsumptionRecord();
 		record.setAmount(vo.getAmount());
 		record.setFromDate(vo.getFromDate());

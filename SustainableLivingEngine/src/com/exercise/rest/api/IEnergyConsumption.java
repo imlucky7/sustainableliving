@@ -26,5 +26,5 @@ public interface IEnergyConsumption {
 	@Path("/store/{userId}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.TEXT_PLAIN)
-    public Response storeRecord(@PathParam("userId") String userId, ConsumptionVO vo);
+    public Response storeRecord(@PathParam("userId") String userId, ConsumptionVO vo) throws Exception;
 }

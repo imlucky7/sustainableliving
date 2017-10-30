@@ -8,6 +8,7 @@ package com.exercise.template;
  */
 public interface ITemplate {
 	
+	public String getTemplateId();
 	public String getEnergyType();
 	public String getTemplateType();
 	public void customiseTemplate();

@@ -10,9 +10,11 @@ package com.exercise.template;
 public class NonpeaktimePowerUsage extends PowerTemplate {
 
 	String templateType;
+	String id;
 
 	public NonpeaktimePowerUsage() {
 		templateType = "NonpeaktimePowerUsage";
+		id = "";
 	}
 
 	@Override
@@ -24,6 +26,11 @@ public class NonpeaktimePowerUsage extends PowerTemplate {
 	public void customiseTemplate() {
 		// TODO customize the template
 		
+	}
+
+	@Override
+	public String getTemplateId() {
+		return this.id;
 	}
 
 	//TODO implementation of non-peak time power usage

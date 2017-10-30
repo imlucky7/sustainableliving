@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.exercise.User.IUser;
 import com.exercise.core.IEnergy;
-import com.exercise.core.IUser;
 import com.exercise.dao.ConsumptionRecordImpl;
 import com.exercise.dao.IConsumptionDao;
 
