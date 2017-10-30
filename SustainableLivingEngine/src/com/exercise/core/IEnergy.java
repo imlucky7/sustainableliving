@@ -9,6 +9,6 @@ package com.exercise.core;
  *
  */
 public interface IEnergy {
-	
+	public String getType();
 	public String getUnit();
 }

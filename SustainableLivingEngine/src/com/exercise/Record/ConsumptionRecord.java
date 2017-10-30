@@ -6,6 +6,8 @@ import java.util.Map;
 
 import com.exercise.core.IEnergy;
 import com.exercise.core.IUser;
+import com.exercise.dao.ConsumptionRecordImpl;
+import com.exercise.dao.IConsumptionDao;
 
 /**
  * ConsumptionRecord class will hold the records
@@ -79,9 +81,10 @@ public class ConsumptionRecord {
 		return attributes;
 	}
 
-	public String storeConsumptionRecord() {
+	public String storeConsumptionRecord() throws Exception {
 		
-		//TODO DB operation to store the consumption records
+		IConsumptionDao dao = new ConsumptionRecordImpl();
+		dao.saveConsumptionRecord(this);
 		return null;
 	}
 }
