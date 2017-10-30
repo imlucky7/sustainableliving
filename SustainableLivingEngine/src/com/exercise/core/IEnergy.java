@@ -1,5 +1,5 @@
 package com.exercise.core;
 
-public interface Energy {
+public interface IEnergy {
 
 }
