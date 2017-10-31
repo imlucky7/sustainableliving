@@ -17,9 +17,9 @@ public class ConsumptionRecordImpl implements IConsumptionDao {
 	 * @see com.exercise.dao.IConsumptionDao#saveConsumptionRecord(com.exercise.Record.ConsumptionRecord)
 	 */
 	@Override
-	public void saveConsumptionRecord(ConsumptionRecord record) throws Exception {
+	public boolean saveConsumptionRecord(ConsumptionRecord record) throws Exception {
 		// TODO manipulate the data and store the record in DB
-
+		return true;
 	}
 
 }

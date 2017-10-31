@@ -17,8 +17,8 @@ public class UserDaoImpl implements IUserDao {
 	 * @see com.exercise.dao.IUserDao#register(com.exercise.rest.api.vo.LoginVO)
 	 */
 	@Override
-	public void register(LoginVO loginVO) throws Exception {
-		// TODO Auto-generated method stub
+	public boolean register(LoginVO loginVO) throws Exception {
+		return true;
 
 	}
 	
