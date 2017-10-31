@@ -52,4 +52,5 @@ public class UserConsumptionTest {
 			assertEquals("Exception message", e.getMessage());
 		}
 	}
+	
 }
